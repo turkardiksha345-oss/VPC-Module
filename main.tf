@@ -24,6 +24,12 @@ resource "aws_subnet" "private_subnet" {
   cidr_block        = var.private_subnet_cidr
   availability_zone = var.private_az
 
+resource "aws_subnet" "private_subnet_2" {
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = var.private_subnet_cidr_2
+  availability_zone = var.private_az_2
+
+
   tags = {
     Name = "private-subnet"
   }
