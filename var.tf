@@ -17,3 +17,6 @@ variable "public_az" {
 variable "private_az" {
 
 }
+
+variable "private_az_2" {
+}
